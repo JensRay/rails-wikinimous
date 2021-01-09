@@ -1,0 +1,12 @@
+<nav class="navbar navbar-light bg-light d-flex border-bottom">
+  <div class="ms-3 navbar-brand text-secondary">Wikinimous</div>
+  <div class="me-3 text-secondary">New Article</div>
+</nav>
+<div class="container mt-4">
+  <div class="row">
+    <%  @articles.each do |article| %>
+      <h1 class="title"><%= article.title %></h1>
+      <p><%= article.content %></p>
+    <% end %>
+  </div>
+</div>
