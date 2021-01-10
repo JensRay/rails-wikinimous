@@ -2,14 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.title {
-  color: rgb(44, 124, 170);
+
+@import 'colors';
+
+.title, h1, h2 {
+  color: $blue;
 }
 
 p {
   font-weight: 300;
 }
 
-.container {
-  width: 600px;
+.container .row {
+  width: 500px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.navbar a {
+  color: gray;
 }
